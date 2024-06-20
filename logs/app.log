@@ -1,0 +1,73 @@
+11:57:15.853 INFO  utilities.ExtentManager -************Report Path************
+11:57:15.858 INFO  utilities.ExtentManager -C:\Users\kassi\IdeaProjects\POM//reports/Automation Report_06_20_2024 11_57_15.html
+11:57:15.858 INFO  utilities.ExtentManager -************Report Path************
+11:57:15.993 INFO  base.TestListeners -On start -> Test Tag Name: Application Test
+11:57:15.993 INFO  base.TestListeners -These methods will be executed in this <test> tag
+11:57:15.993 INFO  base.TestListeners -testInvalidLogin
+11:57:19.025 INFO  base.CustomDriver -Element found with: xpath=>//a[contains(@href,'login')]
+11:57:19.775 INFO  base.CustomDriver -Clicked on :: Login Link
+11:57:19.792 INFO  base.CustomDriver -Element found with: id=>email
+11:57:19.861 INFO  base.CustomDriver -Send keys on element :: Email Fieldwith data :: kassim.madarsha@gmail.com
+11:57:19.869 INFO  base.CustomDriver -Element found with: id=>login-password
+11:57:19.920 INFO  base.CustomDriver -Send keys on element :: Password Fieldwith data :: Aaliya0812$$
+11:57:19.928 INFO  base.CustomDriver -Element found with: id=>login
+11:57:19.953 INFO  base.CustomDriver -Clicked on :: Login Button
+11:57:21.146 INFO  base.CustomDriver -Element List found with: xpath=>//img[@class='zl-navbar-rhs-img ']
+11:57:21.153 INFO  base.TestListeners -OnTestFailure -> Test Method Name: testInvalidLogin
+11:57:21.274 INFO  base.CustomDriver -Element List found with: xpath=>//img[@class='zl-navbar-rhs-img ']
+11:57:21.280 INFO  base.CustomDriver -Element found with: xpath=>//img[@class='zl-navbar-rhs-img ']
+11:57:21.305 INFO  base.CustomDriver -Clicked on :: User Account Icon
+11:57:22.403 INFO  base.CustomDriver -Clicked on :: Logout Link
+11:57:22.407 INFO  base.CustomDriver -Element found with: xpath=>//a[contains(@href,'login')]
+11:57:22.863 INFO  base.CustomDriver -Clicked on :: Login Link
+11:57:22.973 INFO  base.TestListeners -onFinish -> Test Tag Name: Application Test
+12:02:40.388 INFO  utilities.ExtentManager -************Report Path************
+12:02:40.391 INFO  utilities.ExtentManager -C:\Users\kassi\IdeaProjects\POM//reports/Automation Report_06_20_2024 12_02_40.html
+12:02:40.391 INFO  utilities.ExtentManager -************Report Path************
+12:02:40.534 INFO  base.TestListeners -On start -> Test Tag Name: Application Test
+12:02:40.535 INFO  base.TestListeners -These methods will be executed in this <test> tag
+12:02:40.535 INFO  base.TestListeners -filterByCategory
+12:02:40.535 INFO  base.TestListeners -verifySearchCourse
+12:02:40.535 INFO  base.TestListeners -testInvalidLogin
+12:02:43.373 INFO  base.CustomDriver -Element found with: xpath=>//a[contains(@href,'login')]
+12:02:43.864 INFO  base.CustomDriver -Clicked on :: Login Link
+12:02:43.881 INFO  base.CustomDriver -Element found with: id=>email
+12:02:43.948 INFO  base.CustomDriver -Send keys on element :: Email Fieldwith data :: kassim.madarsha@gmail.com
+12:02:43.955 INFO  base.CustomDriver -Element found with: id=>login-password
+12:02:44.005 INFO  base.CustomDriver -Send keys on element :: Password Fieldwith data :: Aaliya0812$$
+12:02:44.012 INFO  base.CustomDriver -Element found with: id=>login
+12:02:44.041 INFO  base.CustomDriver -Clicked on :: Login Button
+12:02:45.464 INFO  base.CustomDriver -Element List found with: xpath=>//img[@class='zl-navbar-rhs-img ']
+12:02:45.470 INFO  base.TestListeners -OnTestFailure -> Test Method Name: testInvalidLogin
+12:02:45.591 INFO  base.CustomDriver -Element List found with: xpath=>//img[@class='zl-navbar-rhs-img ']
+12:02:45.598 INFO  base.CustomDriver -Element found with: xpath=>//img[@class='zl-navbar-rhs-img ']
+12:02:45.620 INFO  base.CustomDriver -Clicked on :: User Account Icon
+12:02:46.675 INFO  base.CustomDriver -Clicked on :: Logout Link
+12:02:46.681 INFO  base.CustomDriver -Element found with: xpath=>//a[contains(@href,'login')]
+12:02:47.071 INFO  base.CustomDriver -Clicked on :: Login Link
+12:02:49.552 INFO  base.CustomDriver -Element found with: xpath=>//a[contains(@href,'login')]
+12:02:50.105 INFO  base.CustomDriver -Clicked on :: Login Link
+12:02:50.113 INFO  base.CustomDriver -Element found with: id=>email
+12:02:50.179 INFO  base.CustomDriver -Send keys on element :: Email Fieldwith data :: kassim.madarsha@gmail.com
+12:02:50.185 INFO  base.CustomDriver -Element found with: id=>login-password
+12:02:50.241 INFO  base.CustomDriver -Send keys on element :: Password Fieldwith data :: Aaliya0812$$
+12:02:50.249 INFO  base.CustomDriver -Element found with: id=>login
+12:02:50.278 INFO  base.CustomDriver -Clicked on :: Login Button
+12:02:50.286 INFO  base.CustomDriver -Element found with: xpath=>//*[contains(text(),'ALL COURSES')]
+12:02:51.557 ERROR base.CustomDriver -Cannot click on :: All Courses Link
+12:02:51.655 INFO  base.CustomDriver -Screen Shot Was Stored at: C:\Users\kassi\IdeaProjects\POM/screenshots/_Click error_06_20_2024 12_02_51.png
+12:02:54.679 ERROR base.CustomDriver -Element Not found with: name=>categories
+12:02:54.679 ERROR base.CustomDriver -Cannot click on :: Category Dropdown
+12:02:54.795 INFO  base.CustomDriver -Screen Shot Was Stored at: C:\Users\kassi\IdeaProjects\POM/screenshots/_Click error_06_20_2024 12_02_54.png
+12:03:09.842 ERROR base.CustomDriver -Cannot click on :: Category Option
+12:03:09.842 INFO  base.TestListeners -OnTestSuccess -> Test Method Name: filterByCategory
+12:03:09.848 INFO  base.CustomDriver -Element found with: xpath=>//*[contains(text(),'ALL COURSES')]
+12:03:12.438 INFO  base.CustomDriver -Clicked on :: All Courses Link
+12:03:15.467 ERROR base.CustomDriver -Element Not found with: id=>course
+12:03:15.467 ERROR base.CustomDriver -cannot Send keys on element :: Search Course Fieldwith data :: rest api
+12:03:18.528 ERROR base.CustomDriver -Element Not found with: id=>search > div > button
+12:03:18.528 ERROR base.CustomDriver -Cannot click on :: Search Course Button
+12:03:18.729 INFO  base.CustomDriver -Screen Shot Was Stored at: C:\Users\kassi\IdeaProjects\POM/screenshots/_Click error_06_20_2024 12_03_18.png
+12:03:18.737 INFO  base.CustomDriver -Element List found with: xpath=>//*[contains(@class,'-course-list')]
+12:03:18.737 INFO  base.TestListeners -OnTestSuccess -> Test Method Name: verifySearchCourse
+12:03:18.883 INFO  base.TestListeners -onFinish -> Test Tag Name: Application Test
