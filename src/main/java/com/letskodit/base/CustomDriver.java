@@ -180,11 +180,11 @@ public class CustomDriver {
             byte[] bytes = new byte[(int) sourceFile.length()];
             fileInputStreamReader.read(bytes);
             encodedBase64 = new String(Base64.encodeBase64(bytes));
-            //String path = System.getProperty("user.dir") + "/screenshots/";
+          //  String path = System.getProperty("user.dir") + "/screenshots/";
             String path = Constants.REPORTS_DIRECTORY + "/screenshots/";
             File destination = new File(path);
             FileUtils.copyFile(sourceFile, destination);
-            bytes = IOUtils.toByteArray(path);
+           // bytes = IOUtils.toByteArray(path);
         } catch (Exception e) {
             e.printStackTrace();
         }
