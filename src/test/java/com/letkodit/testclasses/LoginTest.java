@@ -24,15 +24,15 @@ public class LoginTest extends BaseTest {
         }
     }
 //
-//    @Test
-//    public void testLogin() {
-//        navigationpage = login.signInWith(Constants.DEFAULT_USERNAME, Constants.DEFAULT_PASSWORD);
-//        boolean headerResult = navigationpage.verifyHeader();
-//        CheckPoint.mark("test-01", headerResult,"header verification");
-//        boolean result = navigationpage.isUserLoggedIn();
-//        CheckPoint.markFinal("test-01", result,"Login verification");
-//       // Assert.assertTrue(result);
-//    }
+    @Test
+    public void testLogin() {
+        navigationpage = login.signInWith(Constants.DEFAULT_USERNAME, Constants.DEFAULT_PASSWORD);
+        boolean headerResult = navigationpage.verifyHeader();
+        CheckPoint.mark("test-01", headerResult,"header verification");
+        boolean result = navigationpage.isUserLoggedIn();
+        CheckPoint.markFinal("test-01", result,"Login verification");
+       // Assert.assertTrue(result);
+    }
 
     @Test(enabled = false)
     public void testInvalidLogin() {
