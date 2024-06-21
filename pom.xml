@@ -84,7 +84,6 @@
         <resource>
             <directory>src/main/resources/config</directory>
         </resource>
-
     </resources>
 </build>
 
@@ -105,8 +104,7 @@
                </plugins>
            </build>
 
-
-        </profile>
+       </profile>
 
     </profiles>
 
