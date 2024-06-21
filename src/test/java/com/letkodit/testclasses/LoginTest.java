@@ -34,7 +34,7 @@ public class LoginTest extends BaseTest {
        // Assert.assertTrue(result);
     }
 
-    @Test(enabled = false)
+    @Test
     public void testInvalidLogin() {
         navigationpage = login.signInWith(Constants.DEFAULT_USERNAME, Constants.DEFAULT_PASSWORD);
         boolean result = navigationpage.isUserLoggedIn();

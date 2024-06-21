@@ -173,15 +173,20 @@ public class CustomDriver {
 
     public String takeScreenshot(String methodName, String browserName) {
         File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String fileName = Util.getScreenshotName(methodName, browserName);
         String encodedBase64 = null;
         FileInputStream fileInputStreamReader = null;
+        String path = System.getProperty("user.dir") + "/screenshots/";
         try {
             fileInputStreamReader = new FileInputStream(sourceFile);
             byte[] bytes = new byte[(int) sourceFile.length()];
             fileInputStreamReader.read(bytes);
             encodedBase64 = new String(Base64.encodeBase64(bytes));
-          //  String path = System.getProperty("user.dir") + "/screenshots/";
-            String path = Constants.REPORTS_DIRECTORY + "/screenshots/";
+
+            new File(path).mkdirs();
+            path = path + fileName;
+
+          //  String path = Constants.REPORTS_DIRECTORY + "/screenshots/";
             File destination = new File(path);
             FileUtils.copyFile(sourceFile, destination);
            // bytes = IOUtils.toByteArray(path);

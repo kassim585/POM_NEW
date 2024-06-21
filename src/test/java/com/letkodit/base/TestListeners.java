@@ -70,7 +70,7 @@ public class TestListeners extends BaseTest implements ITestListener {
         String path = cd.takeScreenshot(result.getName(), browser);
         try {
             extenttest.get().fail("<b>" + "<font color=red>" +
-                            "Screenshot of failure" + "</font>" + "</b>",
+                            "Screenshot of failed Testcase" + "</font>" + "</b>",
                     MediaEntityBuilder.createScreenCaptureFromBase64String(path).build());
 
         } catch (IOException e) {
