@@ -65,6 +65,7 @@ public class WebDriverFactory {
     private ChromeOptions setChromeOptions(){
         ChromeOptions options = new ChromeOptions();
         options.addArguments("disable-infobars");
+        options.addArguments("--disable-popup-blocking");
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         return options;
     }
