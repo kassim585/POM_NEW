@@ -67,10 +67,10 @@ public class TestListeners extends BaseTest implements ITestListener {
         String browser = WebDriverFactory.getInstance().getBrowser();
         WebDriver driver = WebDriverFactory.getInstance().getDriver(browser);
         CustomDriver cd = new CustomDriver(driver);
-        String path = cd.takeScreenshot(result.getName(), browser);
-        extenttest.get().fail("<b>" + "<font color=red>" +
-                        "Screenshot of failed Testcase" + "</font>" + "</b>",
-                MediaEntityBuilder.createScreenCaptureFromBase64String(path).build());
+//        String path = cd.takeScreenshot(result.getName(), browser);
+//        extenttest.get().fail("<b>" + "<font color=red>" +
+//                        "Screenshot of failed Testcase" + "</font>" + "</b>",
+//                MediaEntityBuilder.createScreenCaptureFromBase64String(path).build());
 
 
         String logText = "<b>" + "Test Method " + methodName + " Failed" + "</b";
