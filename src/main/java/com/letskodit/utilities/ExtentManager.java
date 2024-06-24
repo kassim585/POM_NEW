@@ -1,7 +1,8 @@
 package com.letskodit.utilities;
 
 import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,15 +29,15 @@ public class ExtentManager {
         log.info("************Report Path************");
         log.info(path);
         log.info("************Report Path************");
-        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(path);
-        htmlReporter.config().setTheme(Theme.STANDARD);
-        htmlReporter.config().setDocumentTitle("Automation Run");
-        htmlReporter.config().setEncoding("utf-8");
-        htmlReporter.config().setReportName(fileName);
+        ExtentSparkReporter spark = new ExtentSparkReporter(path);
+        spark.config().setTheme(Theme.STANDARD);
+        spark.config().setDocumentTitle("Automation Run");
+        spark.config().setEncoding("utf-8");
+        spark.config().setReportName(fileName);
         extent = new ExtentReports();
         extent.setSystemInfo("Organization", "Kassim Mastering Automation");
         extent.setSystemInfo("Automation Framework", "Selenium WebDriver");
-        extent.attachReporter(htmlReporter);
+        extent.attachReporter(spark);
         return extent;
     }
 }

@@ -68,14 +68,9 @@ public class TestListeners extends BaseTest implements ITestListener {
         WebDriver driver = WebDriverFactory.getInstance().getDriver(browser);
         CustomDriver cd = new CustomDriver(driver);
         String path = cd.takeScreenshot(result.getName(), browser);
-        try {
-            extenttest.get().fail("<b>" + "<font color=red>" +
-                            "Screenshot of failed Testcase" + "</font>" + "</b>",
-                    MediaEntityBuilder.createScreenCaptureFromBase64String(path).build());
-
-        } catch (IOException e) {
-            extenttest.get().fail("Test Method Failed, cannot attach screenshot");
-        }
+        extenttest.get().fail("<b>" + "<font color=red>" +
+                        "Screenshot of failed Testcase" + "</font>" + "</b>",
+                MediaEntityBuilder.createScreenCaptureFromBase64String(path).build());
 
 
         String logText = "<b>" + "Test Method " + methodName + " Failed" + "</b";

@@ -5,7 +5,7 @@
     </listeners>
     <test name="Application Test" preserve-order="true">
         <classes>
-        <class name="com.letkodit.testclasses.LoginTest"></class>
+            <class name="com.letkodit.testclasses.LoginTest"/>
 <!--         <class name="com.letkodit.testclasses.AllCoursesTest"></class>-->
          </classes>
     </test>
